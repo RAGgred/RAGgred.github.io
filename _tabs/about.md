@@ -14,4 +14,6 @@ Professionally, I work as a Digital Coordinator for a national charity focused o
 
 In a past life, I managed large operational teams at a major online retailer, where I led people, hit KPIs, and solved a thousand problems a day before lunch. That hands-on leadership experience still shapes how I approach challenges today — with structure, empathy, and a splash of humour.
 
+If you want to know more about my professional career you can check out my CV.
+
 Outside of work, I'm a firm believer in lifelong learning. Whether it's through formal education, online courses, or hands-on projects, I love peeling back the layers of complexity in tech and data. One day, I hope to fully grasp the inner workings of advanced machine learning models — and until then, I'm loving the ride.
