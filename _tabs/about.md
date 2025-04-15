@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## About Me
+
 
 Hi, I’m Raluca — a data-curious, ever-learning, coffee-fueled human who’s pivoted across a few careers and collected quite the skillset along the way.
 
