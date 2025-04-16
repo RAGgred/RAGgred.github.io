@@ -10,17 +10,21 @@ render_with_liquid: false
 
 In this project, I explore the effectiveness of **Convolutional Neural Networks (CNNs)** compared to traditional **Artificial Neural Networks (ANNs)** for image classification. Leveraging the **CIFAR-10** dataset, the task involves categorizing 32x32 color images across 10 distinct classes such as airplane, automobile, bird, cat, and more.
 
+## 🧠 Key Differences
+
+Convolutional Neural Networks have revolutionised the field of computer vision, particularly the task of image classification. CNNs emerged from the study of the brain’s visual cortex and are a type of deep neural network specifically designed to process images. The key difference between the two, and why CNNs are better at image classification lays in their architecture (Geron, 2022)
+
+An ANN is a series of algorithms, composed of layers, usually an input layer, several hidden layers and an output layer of connected neurons (Awan, n.d). The way the information flows in an ANN is in a forward manner where the weighted sum of the signals arriving at the input is then passed through an activation function (usually a sigmoid or Tahn) which gives it its output (Kubat, 2021).
+
+During training, the network is presented with data, makes a prediction based on its current knowledge (known as weights and biases), and then measures the accuracy by measuring the error rate which is calculated by dividing the number of errors by the number of examples that have been classified. Then backpropagation is used to find the best weights and biases so that the error rate decreases (Kubat, 2021; Geron 2022).
+
+CNNs on the other hand use principles from linear algebra notably matrix multiplication, to identify patterns (Bhardwaj, 2022).
+
+A CNN is usually composed of a few convolutional layers, each one generally followed by a ReLU layer, then a pooling layer, then another few convolutional layers followed by ReLU then pooling and so on with the image getting smaller and smaller as it goes through the network (Geron, 2022). This is followed by a regular ANN (Burkov 2019, Geron, 2022). With each layer, the CNN increases in its complexity, identifying greater portions of the image (IBM, 2021).
+The convolutional layer is the core of a CNN, and requires input data, a filter, and a feature map. A filter (or kernel) is a small 2D array of weights, typically 3x3, that moves across the image’s receptive fields to detect features—a process called convolution. At each step, the filter computes a dot product between its weights and the corresponding input pixels, producing an output value. The filter then shifts by a stride and repeats this until it covers the entire image. The resulting collection of outputs forms the feature map (or activation map) (IBM, 2021; Geron, 2022, Kubat, 2021). CNNs are used for image classification because they can learn many layers of feature representations, consider the local context information and since there are fewer units, the number of parameters the model needs to learn are significantly lower (Bhardwaj, 2022; Kalra, 2023; Geron, 2022).
+
+
 Full code found here. 
-
-
----
-
-## 🎯 Objective
-
-- Compare the performance of ANN and CNN architectures.
-- Explore data preprocessing, augmentation, and sampling strategies.
-- Build and optimize a CNN model using regularization, dropout, batch normalization, and early stopping.
-- Evaluate model performance using stratified k-fold cross-validation and key metrics.
 
 ---
 
@@ -74,6 +78,19 @@ model = Sequential([
 
 ---
 
+### The CNN comprises of:
+
+1.	1 x input layer (32x32 colour images)
+2.	3 x 2D Convolutional layers with same padding, and L2 regularisation and batch normalisation
+3.	3 x Max Pooling layers following each Conv2D layer
+4.	3 x 25 % Dropout layers following each Max Pooling layer
+5.	1 x Flatten layer 
+6.	1 x Dense layer with 256 neurons, ReLU activation, L2 kernel regularisation, with 50% dropout
+7.	L1 dense layer with 10 neurons and Softmax activation 
+
+
+---
+
 ## 🧪 Training Techniques & Strategy
 
 - **Stratified Sampling** to maintain class balance
@@ -105,15 +122,19 @@ model = Sequential([
 
 ---
 
-## 🔄 Sample Predictions
+## 🔄 Sample Predictions and model performance
 
-| Image | Actual Class | Predicted Class |
-|-------|--------------|-----------------|
-| ![](your-image-path/img1.png) | Ship | Truck |
-| ![](your-image-path/img2.png) | Cat | Bird |
-| ![](your-image-path/img3.png) | Frog | Frog ✅ |
+| Actual Class | Predicted Class |
+|--------------|-----------------|
+| Ship | Truck |
+| Cat | Bird |
+| Frog | Frog ✅ |
 
 > Model correctly classified 8 out of 10 random images.
+
+final model performance confusion matrix
+
+final model performance images 
 
 ---
 
