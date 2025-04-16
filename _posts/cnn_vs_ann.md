@@ -2,11 +2,8 @@
 title: "CNN vs ANN: A Deep Dive into Image Classification using CIFAR-10"
 author: RAG
 date: 25-04-16 14:11
-categories:
-  - Machine Learning
-  - Computer Vision
-tags:
-  - CNN
+categories: [Machine Learning, Computer Vision]
+tags: [CNNs, ANNs]
 render_with_liquid: false
 ---
 
