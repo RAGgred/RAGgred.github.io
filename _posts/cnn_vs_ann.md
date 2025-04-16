@@ -15,6 +15,8 @@ render_with_liquid: false
 In this project, I explore the effectiveness of **Convolutional Neural Networks (CNNs)** compared to traditional **Artificial Neural Networks (ANNs)** for image classification. Leveraging the **CIFAR-10** dataset, the task involves categorizing 32x32 color images across 10 distinct classes such as airplane, automobile, bird, cat, and more.
 
 Full code found here. 
+
+
 ---
 
 ## 🎯 Objective
