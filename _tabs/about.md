@@ -5,7 +5,7 @@ order: 4
 ---
 
 
-
+ 
 Hi, I’m Raluca — a data-curious, ever-learning, coffee-fueled human who’s pivoted across a few careers and collected quite the skillset along the way.
 
 I’m currently diving deep into an MSc in Data Science at the University of Essex, where I spend my time chasing complex algorithms and trying to convince Python to cooperate. Before this, I explored the fascinating intersection of Criminology and Psychology in my BSc, where I discovered a passion for data and statistics. Even earlier, I earned a nursing degree — which taught me both scientific reasoning and how to keep calm under pressure (plus how to fix the occasional boo-boo).
