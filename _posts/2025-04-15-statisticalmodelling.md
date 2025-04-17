@@ -9,15 +9,14 @@ render_with_liquid: false
 This project analyzes a Portuguese bank's telemarketing campaign dataset to predict whether a client will subscribe to a long-term deposit. Using real-world customer data and multiple statistical models—including Logistic Regression, Random Forest, and XGBoost—the project showcases data preprocessing, exploratory data analysis, and predictive modeling to optimize campaign strategies.
 
 
+
 ---
 
- ##  Full code 
+
+##  Full code 
  
  You can check out the full code used for this project [here.](https://github.com/RAGgred/RAGgred.github.io/blob/main/assets/projects/notebooks/statisticalmodelling.ipynb)
-
----
-
-
+ 
 ## 📁 Dataset
 
 - 📌 Source: [UCI Machine Learning Repository – Bank Marketing Dataset](https://doi.org/10.24432/C5K306)  
