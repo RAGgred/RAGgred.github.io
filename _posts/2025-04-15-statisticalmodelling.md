@@ -57,15 +57,14 @@ When it comes to the current campaign, most clients were contacted once or twice
 
 When it comes to external factors, the employment variation is most significant for conversion, where most values are concentrated in the positive range, indicating that stable or recovering periods are more likely to see customer conversions. 
  
-![Distribution of emp.var.rate.](https://RAGgred.github.io/assets/projects/images/disofcamp.png)
+![Distribution of emp.var.rate.](https://RAGgred.github.io/assets/projects/images/disofempvarrate.png)
 
  
-
 The correlation heatmap shows strong positive correlations between four variables: employment variation rate, consumer confidence index, euribor 3-month rate and number of employees. This makes sense in the context of macroeconomics, where economic strength affects multiple indicators. 
 
 There are also strong negative correlations between emp.var.rate and pdays indicating that more recent follow ups have fewer previous contacts, and emp.var.rate and previous, indicating that when the employment rate is higher less calls are needed to secure a conversion. 
  
-Figure 7: Corelation heatmap
+![Corelation heatmap](https://RAGgred.github.io/assets/projects/images/disofempvarrate.png)
 
 There is weak or no corelation for age, campaign and duration suggesting that these fields contain independent information. These variables have been measured against the target variable ‘y’ and visualised using boxplots. Boxplots have been chosen as they are built to provide high-level information at a glance, including the IQR and outliers, and it makes it easy to make comparison between different groups (Yi, 2024).
 
