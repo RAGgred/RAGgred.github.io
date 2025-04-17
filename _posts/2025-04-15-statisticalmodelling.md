@@ -98,12 +98,9 @@ The classification report and confusion matrix for the Linear regression model s
 
 
 
-Figure 9: Model performance comparison
+![MP3](https://RAGgred.github.io/assets/projects/images/roc.png){: width="972" height="589" .w-50 .right}
 
 The ROC curve for the Logistic Regression model shows strong performance, with an AUC score of 0.94. This indicates that the model is highly effective at distinguishing between the positive class (yes) and the negative class (no). The curve is close to the top-left corner, which suggests that the model achieves a high true positive rate while minimizing false positives. In cases of imbalanced classification, the ROC-AUC score is a more reliable metric than accuracy. This further supports the use of Logistic Regression as a strong baseline model for this task.  
-
-igure 10: Model performance comparison
-
 
 
 
