@@ -64,13 +64,11 @@ The correlation heatmap shows strong positive correlations between four variable
 
 There are also strong negative correlations between emp.var.rate and pdays indicating that more recent follow ups have fewer previous contacts, and emp.var.rate and previous, indicating that when the employment rate is higher less calls are needed to secure a conversion. 
  
-![Corelation heatmap](https://RAGgred.github.io/assets/projects/images/disofempvarrate.png)
+![Corelation heatmap](https://RAGgred.github.io/assets/projects/images/corrheat.png)
 
 There is weak or no corelation for age, campaign and duration suggesting that these fields contain independent information. These variables have been measured against the target variable ‘y’ and visualised using boxplots. Boxplots have been chosen as they are built to provide high-level information at a glance, including the IQR and outliers, and it makes it easy to make comparison between different groups (Yi, 2024).
 
 When it comes to age, older individuals are slightly more inclined to subscribe. This can be due to potential greater income security. The duration is the strongest indicator with longer calls being significantly more likely to convert, whereas the fewer campaigns are more effective in securing conversion, as over contacting may cause fatigue. 
-
-
 
 
 ---
@@ -85,11 +83,20 @@ The aim of this analysis is to assess whether a client will subscribe to a long-
 | XGBoost             | ~91%     | 95%+    |
 
 
+
+
+![MP1](https://RAGgred.github.io/assets/projects/images/modelperfcomp.png){: width="972" height="589" .w-50 .left}
 A performance comparison among three classifiers showed that logistic regression achieved the highest accuracy at 92.4% and a ROC AUC of 95%, as illustrated in Figure 9. Bar charts are used in this analysis because they provide a clear way to display the distribution of data points and compare metric values across different categories (Yi, 2024). This finding suggests a strong alignment between the linear decision boundary and the relationship between the features and the target variable. Random forest and XGBoost performed similarly, although XGBoost exhibited a slightly higher ROC AUC, indicating a better ability to discriminate between classes. These results reinforce the use of logistic regression as a baseline model, with XGBoost serving as a suitable alternative for more complex tasks.
 
-Add pic
 
+
+
+![MP2](https://RAGgred.github.io/assets/projects/images/modelperfcomp.png){: width="972" height="589" .w-50 .right}
 The classification report and confusion matrix for the Linear regression model show that the model achieves high accuracy (92%) and strong precision for both classes. However, it struggles with identifying true positives: only 45% of clients who subscribed were correctly predicted as such. This highlights a trade-off between overall performance and sensitivity to the positive class. In the context of marketing, improving recall for the "yes" class could lead to better campaign targeting and conversion rates. 
+
+
+
+
 
 Figure 9: Model performance comparison
 
