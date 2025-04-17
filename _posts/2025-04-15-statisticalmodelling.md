@@ -66,7 +66,7 @@ When it comes to age, older individuals are slightly more inclined to subscribe.
 
 ---
 
-## 📈 Statistical Modelling
+## 📈 Statistical Modelling and model comparision
 The aim of this analysis is to assess whether a client will subscribe to a long-term deposit or not. The binary classification problem was solved by employing Logistic Regression, Random Forest and XGBoost.
 
 | Model              | Accuracy | ROC AUC |
