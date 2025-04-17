@@ -85,21 +85,20 @@ The aim of this analysis is to assess whether a client will subscribe to a long-
 
 
 
-![MP1](https://RAGgred.github.io/assets/projects/images/modelperfcomp.png){: width="972" height="589" .w-50 .left}
+![MP1](https://RAGgred.github.io/assets/projects/images/modelperfcomp.png)
 A performance comparison among three classifiers showed that logistic regression achieved the highest accuracy at 92.4% and a ROC AUC of 95%, as illustrated in Figure 9. Bar charts are used in this analysis because they provide a clear way to display the distribution of data points and compare metric values across different categories (Yi, 2024). This finding suggests a strong alignment between the linear decision boundary and the relationship between the features and the target variable. Random forest and XGBoost performed similarly, although XGBoost exhibited a slightly higher ROC AUC, indicating a better ability to discriminate between classes. These results reinforce the use of logistic regression as a baseline model, with XGBoost serving as a suitable alternative for more complex tasks.
 
 
 
 
-![MP2](https://RAGgred.github.io/assets/projects/images/modelperfcomp.png){: width="972" height="589" .w-50 .right}
+![MP2](https://RAGgred.github.io/assets/projects/images/modelperfcomp2.png)
 The classification report and confusion matrix for the Linear regression model show that the model achieves high accuracy (92%) and strong precision for both classes. However, it struggles with identifying true positives: only 45% of clients who subscribed were correctly predicted as such. This highlights a trade-off between overall performance and sensitivity to the positive class. In the context of marketing, improving recall for the "yes" class could lead to better campaign targeting and conversion rates. 
 
 
 
 
 
-![MP3](https://RAGgred.github.io/assets/projects/images/roc.png){: width="972" height="589" .w-50 .right}
-
+![MP3](https://RAGgred.github.io/assets/projects/images/roc.png)
 The ROC curve for the Logistic Regression model shows strong performance, with an AUC score of 0.94. This indicates that the model is highly effective at distinguishing between the positive class (yes) and the negative class (no). The curve is close to the top-left corner, which suggests that the model achieves a high true positive rate while minimizing false positives. In cases of imbalanced classification, the ROC-AUC score is a more reliable metric than accuracy. This further supports the use of Logistic Regression as a strong baseline model for this task.  
 
 
