@@ -8,6 +8,13 @@ render_with_liquid: false
 
 This project analyzes a Portuguese bank's telemarketing campaign dataset to predict whether a client will subscribe to a long-term deposit. Using real-world customer data and multiple statistical models—including Logistic Regression, Random Forest, and XGBoost—the project showcases data preprocessing, exploratory data analysis, and predictive modeling to optimize campaign strategies.
 
+---
+ ## Full code 
+ 
+ You can check out the full code used for this project [here.](https://github.com/RAGgred/RAGgred.github.io/blob/main/assets/projects/notebooks/statisticalmodelling.ipynb)
+
+---
+
 
 ## 📁 Dataset
 
@@ -24,7 +31,7 @@ The dataset is in very good condition with no missing values; however, some feat
 
 The data cleansing strategy chosen for the ‘unknown’ values was handling the unknown data as its own category over mode imputation. Although both strategies had the same accuracy, handling ‘unknown as its own category presents some advantages. It performs better on recall (catches more ‘yes’ responses: 47% vs 46%) and it gives a slight edge in macro average. Additionally, when performing three based models, the unknown can represent a real-life signal such as customers refusing calls, which helps avoiding assumptions in data. 
 
-ADD PICTURE 
+![Data pre-processing](https://RAGgred.github.io/assets/projects/images/missingdatastrat.png)
 
 ---
 
@@ -34,20 +41,23 @@ Exploratory analysis was undertaken to understand the structures and relationshi
 
 The most notable feature in the distribution plots is the call length as shown below: 
  
-Figure 2: Distribution of duration
+![duration distribution](https://RAGgred.github.io/assets/projects/images/disofduration.png)
+
 The right-skewness indicates that the majority of calls are short, with some extremely long one with longer calls being more likely to transform into conversions as shown in figure 3. This feature can serve as a strong proxy to gauge customer engagement; however, it may not be suitable for real-life predictions as the conversion is known only after the call ended.
  
-Figure 3: Call duration by subscription outcome
+![Call duration by subscription outcome](https://RAGgred.github.io/assets/projects/images/calldurationbyoutcome.png)
+
 Another notable feature is pdays, which shows the number of days after the client was last contacted from a previous campaign. This feature is notable, as previous contact significantly influences the conversion rate. The plot is left-skewed and presents a significant spike at 999 which indicates that the majority of the clients have not been contacted yet. 
  
-Figure 4: Distribution of pday
+![Distribution of pday](https://RAGgred.github.io/assets/projects/images/disofpday.png)
+
 When it comes to the current campaign, most clients were contacted once or twice. This is significant as multiple contacts can decrease conversion effectiveness due to customer fatigue. Capping the number of times a customer is contacted could be useful in avoiding customer fatigue (Wang et all, 2022).
  
-Figure 5: Distribution of campaign
+![Distribution of campaign](https://RAGgred.github.io/assets/projects/images/disofcamp.png)
 
 When it comes to external factors, the employment variation is most significant for conversion, where most values are concentrated in the positive range, indicating that stable or recovering periods are more likely to see customer conversions. 
  
-Figure 6: Distribution of emp.var.rate.
+![Distribution of emp.var.rate.](https://RAGgred.github.io/assets/projects/images/disofcamp.png)
 
  
 
